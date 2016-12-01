@@ -8,6 +8,7 @@ It is a Hackathon I took part in when I was in 42 University. The major purpose 
 ## Cautions
 
 I just linked all the pages by fake login and logout, gonna do the real website link later. Please check out the design of the homepage(index.html) It is really bright and fresh
+
 --------------------------------------------------------------------------------------
 
 ### Group member/collaborators
