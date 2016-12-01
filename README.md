@@ -1,8 +1,7 @@
 # Hackathon_Facil_ePharm
 
 A Front_End Webpages Solution for a French Startup  
-It is a Hackathon I took part in when I was in 42 University.  
-The major purpose of this project is to save time for pharmacist and patients. Although I did not win any prize, still I learned a lot about `html` `css` and `javascript`.
+It is a Hackathon I took part in when I was in 42 University. The major purpose of this project is to save time for pharmacist and patients. Although I did not win any prize, still I learned a lot about `html` `css` and `javascript`.
 --------------------------------------------------------------------------------------
 ## Cautions
 
