@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="client.css">
+	<script src="client.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<img src="logo.svg" width="50px" height="50px">
+<h1> WELCOME, JOHN SMITH!</h1>
+
+<div>
+<h2><a href="javascript:void(0)" class="title toggle" onclick="toggle(event, 'rxinfo', '')">PENDING PRESCRIPTIONS:</a></h2>
+	<ul class="pills ready section">
+	<p><i>You have 1 refill ready to pick up and 1 new prescription pending:</i></p>
+		<li class="rxlinks ready">Atorvastatin (50 mg)	
+			<a href="javascript:void(0)" onclick="openMeds(event, 'rx_atorvastatin', 'rxinfo', 'rxlinks')">	details</a>
+		</li>
+		<li class="rxlinks pending">Sildenafil (50 mg)	
+			<a href="javascript:void(0)" onclick="openMeds(event, 'rx_sildenafil', 'rxinfo', 'rxlinks')">	details</a>
+		</li>
+	</ul>
+</div>
+
+<div class="prescriptions">
+	<div id="rx_atorvastatin" name="rx_atorvastatin" class="rxinfo ready section">
+		<ul>
+			<li class="nostyle"><b>Atorvastatin (ready)</b></li>
+			<li class="nostyle">Reason: High Cholesterol</li>
+			<li class="nostyle">Amount: 20 mg (1 pill)</li>
+			<li class="nostyle">Frequency: Once a day.</li>
+			<li class="nostyle">Refills remaining: 9</li>
+			<li class="nostyle">Instructions: ...</li>
+			<li class="nostyle">Common Side Effects: ...</li>
+			<p></p>
+			<li class="nostyle">WARNING: Seek medical attention right away if you experience any of the following:
+				<ul>
+					<li>...</li>
+					<li>...</li>
+					<li>...</li>
+				</ul>
+		</ul>
+	</div>
+	<div id="rx_sildenafil" name="rx_sildenafil" class="rxinfo pending section">
+		<ul>
+			<li class="nostyle"><b>Sildenafil (pending)</b></li>
+			<li class="nostyle">Reason: Erectile disfunction</li>
+			<li class="nostyle">Amount: 50 mg (1 pill)</li>
+			<li class="nostyle">Frequency: Up to one time in 24 hours.</li>
+			<li class="nostyle">Refills remaining: N/A</li>
+			<li class="nostyle">Instructions: Take one hour prior to sexual activity.</li>
+			<li class="nostyle">Common Side Effects: ...</li>
+			<p></p>
+			<li class="nostyle">WARNING: Seek medical attention right away if you experience any of the following:
+				<ul>
+					<li>...</li>
+					<li>...</li>
+					<li>...</li>
+				</ul>
+		</ul>
+	</div>
+</div>
+
+<h2><a href="javascript:void(0)" class="title toggle" onclick="toggle(event, 'tablinks', 'tabcontent')">MEDICATION SCHEDULE:</a></h2>
+<ul class="tab">
+	<li class="nostyle"><a href="javascript:void(0)" class="tablinks" onclick="openDay(event, '0')">Sunday</a></li>
+	<li class="nostyle"><a href="javascript:void(0)" class="tablinks" onclick="openDay(event, '1')">Monday</a></li>
+	<li class="nostyle"><a href="javascript:void(0)" class="tablinks" onclick="openDay(event, '2')">Tuesday</a></li>
+	<li class="nostyle"><a href="javascript:void(0)" class="tablinks" onclick="openDay(event, '3')">Wednesday</a></li>
+	<li class="nostyle"><a href="javascript:void(0)" class="tablinks" onclick="openDay(event, '4')">Thursday</a></li>
+	<li class="nostyle"><a href="javascript:void(0)" class="tablinks" onclick="openDay(event, '5')">Friday</a></li>
+	<li class="nostyle"><a href="javascript:void(0)" class="tablinks" onclick="openDay(event, '6')">Saturday</a></li>
+</ul>
+
+<div class="ampm">
+	<div id="0" class="tabcontent">
+		<h3 class="title">Sunday</h3>
+		<ul class="SunTab schedule">
+		<div class="am section">
+		<li><a href="javascript:void(0)" class="am section">AM</a>
+			<table class="am section">
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td><a href="#aspirin" onclick="openMeds(event, 'aspirin', 'medinfo', 'medlinks')">Aspirin</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td></td></tr>
+			</table>
+		</li>
+		</div>
+		<div class="pm section">
+		<li><a href="javascript:void(0)" class="pm section">PM</a>
+			<table class="pm section">
+			<tr><td><a href="javascript:void(0)" class="num">12:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">1:00</a></td><td><a href="#hydrochlorothiazide" onclick="openMeds(event, 'hydrochlorothiazide', 'medinfo', 'medlinks')">Hydrochlorothiazide</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">2:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">3:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">4:00</a></td><td><a href="#metoprololsuccinate" onclick="openMeds(event, 'metoprololsuccinate', 'medinfo', 'medlinks')">Metoprolol succinate</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td><a href="#atorvastain" onclick="openMeds(event, 'atorvastain', 'medinfo', 'medlinks')">Atorvastain</a><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td><a href="#clopidogrel" onclick="openMeds(event, 'clopidogrel', 'medinfo', 'medlinks')">Clopidogrel</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td> </td></tr>
+			</table>
+		</li>
+		</div>
+		</ul>
+	</div>
+	<div id="1" class="tabcontent">
+		<h3 class="title">Monday</h3>
+		<ul class="MonTab schedule">
+		<div class="am section">
+		<li><a href="javascript:void(0)" class="am section">AM</a>
+			<table class="am section">
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td><a href="#aspirin" onclick="openMeds(event, 'aspirin', 'medinfo', 'medlinks')">Aspirin</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td> </td></tr>
+			</table>
+		</li>
+		</div>
+		<div class="pm section">
+		<li><a href="javascript:void(0)" class="pm section">PM</a>
+			<table class="pm section">
+			<tr><td><a href="javascript:void(0)" class="num">12:00</a></td><td><a href="#hydrochlorothiazide" onclick="openMeds(event, 'hydrochlorothiazide', 'medinfo', 'medlinks')">Hydrochlorothiazide</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">1:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">2:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">3:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">4:00</a></td><td><a href="#metoprololsuccinate" onclick="openMeds(event, 'metoprololsuccinate', 'medinfo', 'medlinks')">Metoprolol succinate</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td><a href="#atorvastain" onclick="openMeds(event, 'atorvastain', 'medinfo', 'medlinks')">Atorvastain</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td><a href="#clopidogrel" onclick="openMeds(event, 'clopidogrel', 'medinfo', 'medlinks')">Clopidogrel</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td> </td></tr>
+			</table>
+		</li>
+		</div>
+		</ul>
+	</div>
+	<div id="2" class="tabcontent">
+		<h3 class="title">Tuesday</h3>
+		<ul class="TuesTab schedule">
+		<div class="am section">
+		<li><a href="javascript:void(0)" class="am section">AM</a>
+			<table class="am section">
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td><a href="#aspirin" onclick="openMeds(event, 'aspirin', 'medinfo', 'medlinks')">Aspirin</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td> </td></tr>
+			</table>
+		</li>
+		</div>
+		<div class="pm section">
+		<li><a href="javascript:void(0)" class="pm section">PM</a>
+			<table class="pm section">
+			<tr><td><a href="javascript:void(0)" class="num">12:00</a></td><td><a href="#hydrochlorothiazide" onclick="openMeds(event, 'hydrochlorothiazide', 'medinfo', 'medlinks')">Hydrochlorothiazide</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">1:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">2:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">3:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">4:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td> <a href="#metoprololsuccinate" onclick="openMeds(event, 'metoprololsuccinate', 'medinfo', 'medlinks')">Metoprolol succinate</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td><a href="#atorvastain" onclick="openMeds(event, 'atorvastain', 'medinfo', 'medlinks')">Atorvastain</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td><a href="#clopidogrel" onclick="openMeds(event, 'clopidogrel', 'medinfo', 'medlinks')">Clopidogrel</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td> </td></tr>
+			</table>
+		</li>
+		</div>
+		</ul>
+	</div>
+	<div id="3" class="tabcontent">
+		<h3 class="title">Wednesday</h3>
+		<ul class="WedTab schedule">
+		<div class="am section">
+		<li><a href="javascript:void(0)" class="am section">AM</a>
+			<table class="am section">
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td><a href="#aspirin" onclick="openMeds(event, 'aspirin', 'medinfo', 'medlinks')">Aspirin</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td> </td></tr>
+			</table>
+		</li>
+		</div>
+		<div class="pm section">
+		<li><a href="javascript:void(0)" class="pm section">PM</a>
+			<table class="pm section">
+			<tr><td><a href="javascript:void(0)" class="num">12:00</a></td><td><a href="#hydrochlorothiazide" onclick="openMeds(event, 'hydrochlorothiazide', 'medinfo', 'medlinks')">Hydrochlorothiazide</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">1:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">2:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">3:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">4:00</a></td><td><a href="#metoprololsuccinate" onclick="openMeds(event, 'metoprololsuccinate', 'medinfo', 'medlinks')">Metoprolol succinate</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td><a href="#atorvastain" onclick="openMeds(event, 'atorvastain', 'medinfo', 'medlinks')">Atorvastain</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td><a href="#clopidogrel" onclick="openMeds(event, 'clopidogrel', 'medinfo', 'medlinks')">Clopidogrel</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td> </td></tr>
+			</table>
+		</li>
+		</div>
+		</ul>
+	</div>
+	<div id="4" class="tabcontent">
+		<h3 class="title">Thursday</h3>
+		<ul class="ThursTab schedule">
+		<div class="am section">
+		<li><a href="javascript:void(0)" class="am section">AM</a>
+			<table class="am section">
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td><a href="#aspirin" onclick="openMeds(event, 'aspirin', 'medinfo', 'medlinks')">Aspirin</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td> </td></tr>
+			</table>
+		</li>
+		</div>
+		<div class="pm section">
+		<li><a href="javascript:void(0)" class="pm section">PM</a>
+			<table class="pm section">
+			<tr><td><a href="javascript:void(0)" class="num">12:00</a></td><td><a href="#hydrochlorothiazide" onclick="openMeds(event, 'hydrochlorothiazide', 'medinfo', 'medlinks')">Hydrochlorothiazide</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">1:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">2:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">3:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">4:00</a></td><td><a href="#metoprololsuccinate" onclick="openMeds(event, 'metoprololsuccinate', 'medinfo', 'medlinks')">Metoprolol succinate</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td><a href="#atorvastain" onclick="openMeds(event, 'atorvastain', 'medinfo', 'medlinks')">Atorvastain</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td><a href="#clopidogrel" onclick="openMeds(event, 'clopidogrel', 'medinfo', 'medlinks')">Clopidogrel</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td> </td></tr>
+			</table>
+		</li>
+		</div>
+		</ul>
+	</div>
+	<div id="5" class="tabcontent">
+		<h3 class="title">Friday</h3>
+		<ul class="FriTab schedule">
+		<div class="am section">
+		<li><a href="javascript:void(0)" class="am section">AM</a>
+			<table class="am section">
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td><a href="#aspirin" onclick="openMeds(event, 'aspirin', 'medinfo', 'medlinks')">Aspirin</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td> </td></tr>
+			</table>
+		</li>
+		</div>
+		<div class="pm section">
+		<li><a href="javascript:void(0)" class="pm section">PM</a>
+			<table class="pm section">
+			<tr><td><a href="javascript:void(0)" class="num">12:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">1:00</a></td><td><a href="#hydrochlorothiazide" onclick="openMeds(event, 'hydrochlorothiazide', 'medinfo', 'medlinks')">Hydrochlorothiazide</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">2:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">3:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">4:00</a></td><td><a href="#metoprololsuccinate" onclick="openMeds(event, 'metoprololsuccinate', 'medinfo', 'medlinks')">Metoprolol succinate</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td><a href="#atorvastain" onclick="openMeds(event, 'atorvastain', 'medinfo', 'medlinks')">Atorvastain</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td><a href="#clopidogrel" onclick="openMeds(event, 'clopidogrel', 'medinfo', 'medlinks')">Clopidogrel</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td> </td></tr>
+			</table>
+		</li>
+		</div>
+		</ul>
+	</div>
+	<div id="6" class="tabcontent">
+		<h3 class="title">Saturday</h3>
+		<ul class="SatTab schedule">
+		<div class="am section">
+		<li><a href="javascript:void(0)" class="am section">AM</a>
+			<table class="am section">
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td><a href="#aspirin" onclick="openMeds(event, 'aspirin', 'medinfo', 'medlinks')">Aspirin</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td> </td></tr>
+			</table>
+		</li>
+		</div>
+		<div class="pm section">
+		<li><a href="javascript:void(0)" class="pm section">PM</a>
+			<table class="pm section">
+			<tr><td><a href="javascript:void(0)" class="num">12:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">1:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">1:00</a></td><td><a href="#hydrochlorothiazide" onclick="openMeds(event, 'hydrochlorothiazide', 'medinfo', 'medlinks')">Hydrochlorothiazide</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">2:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">3:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">4:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">5:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">6:00</a></td><td><a href="#metoprololsuccinate" onclick="openMeds(event, 'metoprololsuccinate', 'medinfo', 'medlinks')">Metoprolol succinate</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">7:00</a></td><td><a href="#atorvastain" onclick="openMeds(event, 'atorvastain', 'medinfo', 'medlinks')">Atorvastain</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">8:00</a></td><td></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">9:00</a></td><td><a href="#clopidogrel" onclick="openMeds(event, 'clopidogrel', 'medinfo', 'medlinks')">Clopidogrel</a></td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">10:00</a></td><td> </td></tr>
+			<tr><td><a href="javascript:void(0)" class="num">11:00</a></td><td> </td></tr>
+			</table>
+		</li>
+		</div>
+		</ul>
+	</div>
+</div>
+
+<div>
+<h2><a href="#pills" class="title toggle" onclick="toggle(event, 'medlinks', 'medinfo')">CURRENT MEDICATIONS:</a></h2>
+<ul id= "pills" class="pills section">
+	<li class="nostyle"><a href="#atorvastain" class="medlinks" onclick="openMeds(event, 'atorvastain', 'medinfo', 'medlinks')">Atorvastain</a></li>
+	<li class="nostyle"><a href="#metoprololsuccinate" class="medlinks" onclick="openMeds(event, 'metoprololsuccinate', 'medinfo', 'medlinks')">Metoprolol succinate</a></li>
+	<li class="nostyle"><a href="#aspirin" class="medlinks" onclick="openMeds(event, 'aspirin', 'medinfo', 'medlinks')">Aspirin</a></li>
+	<li class="nostyle"><a href="#clopidogrel" class="medlinks" onclick="openMeds(event, 'clopidogrel', 'medinfo', 'medlinks')">Clopidogrel</a></li>
+	<li class="nostyle"><a href="#hydrochlorothiazide" class="medlinks" onclick="openMeds(event, 'hydrochlorothiazide', 'medinfo', 'medlinks')">Hydrochlorothiazide</a></li>
+</ul>
+</div>
+
+<div class="medications">
+	<div id="atorvastain" name="atorvastain" class="medinfo section">
+		<ul>
+			<li class="nostyle"><b>Atorvastain</b></li>
+			<li class="nostyle">Reason: ...</li>
+			<li class="nostyle">Amount: 20 mg (1 pill)</li>
+			<li class="nostyle">Frequency: Once a day</li>
+			<li class="nostyle">Refills remaining: 9</li>
+			<li class="nostyle">Instructions: ...</li>
+			<li class="nostyle">Common Side Effects: ...</li>
+			<p></p>
+			<li class="nostyle">WARNING: Seek medical attention right away if you experience any of the following:
+				<ul>
+					<li>...</li>
+					<li>...</li>
+					<li>...</li>
+				</ul>
+		</ul>
+	</div>
+	<div id="metoprololsuccinate" name="metoprololsuccinate" class="medinfo section">
+		<ul>
+			<li class="nostyle"><b>Metoprolol succinate</b></li>
+			<li class="nostyle">Reason: ...</li>
+			<li class="nostyle">Amount: 25 mg (1 pill)</li>
+			<li class="nostyle">Frequency: Once a day</li>
+			<li class="nostyle">Refills remaining: 2</li>
+			<li class="nostyle">Instructions: ...</li>
+			<p></p>
+			<li class="nostyle">WARNING: Seek medical attention right away if you experience any of the following:
+				<ul>
+					<li>...</li>
+					<li>...</li>
+					<li>...</li>
+				</ul>
+		</ul>
+	</div>
+	<div id="aspirin" name="aspirin" class="medinfo section">
+		<ul>
+			<li class="nostyle"><b>Aspirin</b></li>
+			<li class="nostyle">Reason: ...</li>
+			<li class="nostyle">Amount: 325 mg (1 pill)</li>
+			<li class="nostyle">Frequency: Once a day</li>
+			<li class="nostyle">Refills remaining: 2</li>
+			<li class="nostyle">Instructions: ...</li>
+			<p></p>
+			<li class="nostyle">WARNING: Seek medical attention right away if you experience any of the following:
+				<ul>
+					<li>...</li>
+					<li>...</li>
+					<li>...</li>
+				</ul>
+		</ul>
+	</div>
+	<div id="clopidogrel" name="clopidogrel" class="medinfo section">
+		<ul>
+			<li class="nostyle"><b>Clopidogrel</b></li>
+			<li class="nostyle">Reason: ...</li>
+			<li class="nostyle">Amount: 75 mg (1 pill)</li>
+			<li class="nostyle">Frequency: Once a day</li>
+			<li class="nostyle">Refills remaining: 3</li>
+			<li class="nostyle">Instructions: ...</li>
+			<p></p>
+			<li class="nostyle">WARNING: Seek medical attention right away if you experience any of the following:
+				<ul>
+					<li>...</li>
+					<li>...</li>
+					<li>...</li>
+				</ul>
+		</ul>
+	</div>
+	<div id="hydrochlorothiazide" name="hydrochlorothiazide" class="medinfo section">
+		<ul>
+			<li class="nostyle"><b>Hydrochlorothiazide</b></li>
+			<li class="nostyle">Reason: ...</li>
+			<li class="nostyle">Amount: 25 mg (1 pill)</li>
+			<li class="nostyle">Frequency: Once a day</li>
+			<li class="nostyle">Refills remaining: 2</li>
+			<li class="nostyle">Instructions: ...</li>
+			<p></p>
+			<li class="nostyle">WARNING: Seek medical attention right away if you experience any of the following:
+				<ul>
+					<li>...</li>
+					<li>...</li>
+					<li>...</li>
+				</ul>
+		</ul>
+	</div>
+	</div>
+</div>
+
+<div class="padding">
+<div class="logout section">
+	<a href="../index.html" class="logout">Logout</a>
+</div>
+</div>
+
+</body>
+</html>
