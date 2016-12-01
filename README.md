@@ -9,7 +9,7 @@ The major purpose of this project is to save time for pharmacist and patients. A
 I just linked all the pages by fake login and logout, gonna do the real website link later.  
 Please check out the design of the homepage(index.html) It is really bright and fresh
 --------------------------------------------------------------------------------------
-## Group member/collaborators
+### Group member/collaborators
 
 42@amkv   
 42@iwithmor
