@@ -1,0 +1,351 @@
+
+body {
+	background: #615959;
+	height: 100%;
+}
+
+.container {
+	min-height:100%;
+	height:100%;
+	position:relative;
+}
+
+.dheader {
+	background: #696969;
+    padding: 3%;
+}
+
+.header_name {
+    color: white;
+    font-weight: 600;
+    font-size: larger;
+    float: left;
+}
+
+.header_name2 {
+    color: white;
+    font-weight: 600;
+    font-size: larger;
+    float: right;
+}
+
+.dbody {
+	background: #f3f3f3;
+    padding: 3%;
+    padding-bottom:60px;
+    height: 100%;
+}
+
+.dfooter {
+	position:absolute;
+	bottom:0;
+	margin: 0 auto;
+	width:100%;
+	height:3%;   /* Height of the footer */
+	background: #bdbdbd;
+	padding: 1%;
+}
+
+.tabs {
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.drugs {
+    padding: 10px;
+    background: #ececec;
+    margin-bottom: 5px;
+}
+
+.drugs2 {
+    padding: 10px;
+    background: #e2e1e1;
+    margin-bottom: 5px;
+}
+
+.name_drug {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.comments_doctor
+{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.eat_times {
+    display: inline-block;
+    margin-right: 20px;
+    background: #d8d8d8;
+    padding: 3px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.set_time {
+	display: inline-block;
+    margin-right: 20px;
+    background: rgba(105, 105, 105, 0.2);
+    padding: 3px;
+    border-radius: 10px;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.set_time:hover {
+	background: dimgrey;
+    color: white;
+}
+
+.exit {
+    padding: 10px;
+    float: right;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.exit:hover {
+	background: #615959;
+	color: white;
+}
+
+.clear {
+	clear: both;
+}
+
+ .tab_but {
+    padding: 10px;
+    float: left;
+    border: 1px solid #615959;
+    margin-right: 5px;
+    border-radius: 10px;
+    min-width: 100px;
+    text-align: center;
+ }
+
+ .tab_but:hover {
+ 	 background: #e2e1e1;
+ }
+
+.order {
+	float: left;
+    font-size: x-large;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 10px;
+    color: #615959;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-right: 15px;
+}
+
+.choose_day {
+	float: left;
+    padding: 10px;
+    margin-right: -1px;
+    border: 1px solid #615959;
+    margin-bottom: 20px;
+}
+
+.choose_day:hover {
+	background: #e2e1e1;
+}
+
+.cubes_wrapper {
+	border: 1px solid dimgrey;
+    padding: 10px;
+    margin-top: 15px;
+    min-width: 710px;
+    width: 710px;
+    border-radius: 10px;
+}
+
+.cubes {
+    padding: 10px;
+    border: 1px solid black;
+    float: left;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+
+.cubes:hover {
+	background: dimgrey;
+}
+
+.cubes_select {
+	padding: 10px;
+    border: 1px solid black;
+    float: left;
+    margin-left: -1px;
+    margin-top: -1px;
+    background-color: #a9a9c3;
+}
+
+.send_to_emergency {
+    padding: 10px;
+    border: 1px solid black;
+    width: 200px;
+    margin-top: 30px;
+    border-radius: 10px;
+    float: left;
+    height: 35px;
+    text-align: center;
+}
+
+.one_day {
+
+}
+
+.print {
+	padding: 10px;
+    border: 1px solid black;
+    width: 200px;
+    margin-top: 30px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 10px;
+    height: 35px;
+    text-align: center;
+}
+
+.shedule_footer {
+	display: inline;
+}
+
+.pharma_comment {
+	padding: 5px;
+	width:695px;
+    border-radius: 10px;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+.text_decor {
+	text-decoration: none;
+}
+
+.pharma_comment:hover {
+    background: #eae5e5;
+}
+
+.pharma_add_comment {
+	padding: 5px;
+    width: 90px;
+    border-radius: 10px;
+    margin-top: 5px;
+    border: 1px solid #615959;
+    text-decoration: none;
+}
+
+a.pharma_add_comment {
+	text-decoration: none;
+}
+
+.pharma_add_comment:hover {
+    background: #615959;
+    color: white;
+}
+
+.day_name {
+	font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.list_header {
+    padding: 5px;
+    border: 1px solid #e2e1e1;
+    margin-bottom: 5px;
+}
+
+.list_header_name {
+	padding-top: 8px;
+}
+
+li.big_li {
+	font-size: x-large;
+}
+
+.prescription {
+	background-color: #e2e1e1;
+}
+
+.from_doctor {
+	font-weight: 700;
+    margin-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.loginpage {
+    margin: 0 auto;
+    border: 1px solid dimgrey;
+    display: table;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+}
+
+.person {
+    padding: 10px;
+    border: 1px solid #615959;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.person:hover {
+    background: red;
+    background: dimgrey;
+    color: white;
+}
+
+
+/* Style the list */
+div.tab {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: #ddd;}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {background-color: #ccc;}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+}
+
+/*position the logo in the right place.*/
+img.logo
+{
+    z-index: 2;
+    position: absolute;
+    top: 30px;
+    right: 150px;
+}

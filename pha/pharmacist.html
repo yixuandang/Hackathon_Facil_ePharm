@@ -1,0 +1,345 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>pharmacist's page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <script type="text/javascript">
+    function openTab(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+        // document.getElementById("List of drugs").click();
+    }
+  </script>
+  <script type="text/javascript">window.onload = function () {openTab(event, 'List of drugs');}</script>
+</head>
+
+<body>
+  <img class="logo" src="../img/logo.svg" width="50px" height="50px">
+  <div class="container">
+    <div class="dheader">
+      <div class="header_name">Facil-ePharm (prototype)</div>
+      <div class="header_name2">pharmacist</div>
+      <div class="clear"></div>
+    </div>
+    <div class="dbody">
+    <div class="order">Order# @983497345897345</div>
+    <div class="order">mr. Artem Kalmykov</div>
+    <a href="../index.html"><div class="exit">exit</div></a>
+    <div class = "clear"></div>
+    
+    <div class="tab">
+      <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'List of drugs')"><div class="tab_but">List of drugs</div></a>
+      <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Schedule')"><div class="tab_but">Schedule</div></a>
+      <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Idea')"><div class="tab_but">Idea</div></a>
+    </div>
+
+    <div id="List of drugs" class="tabcontent">
+      <h3>List of drugs</h3>
+      <div class="prescription">
+        <div class="from_doctor">Prescription from doctor</div>
+      </div>
+      <div class="list_header">
+        <div class="list_header_name">Doctor name: Moodi St.</div>
+        <div class="list_header_name">Total tablets: @65</div>
+        <div class="list_header_name">Total times to use: @35</div>
+        <div class="list_header_name">Days: @6</div>
+        <div class="list_header_name">Recomendation from the doctor: @general advice ...</div>
+      </div> 
+
+
+        <div class="drugs">
+        <div class="name_drug">@Item 1</div>
+        <a href="javascript:void(0)" class="set_time" onclick="openTab(event, 'Schedule')"><div>set schedule +</div></a>
+        <div class="eat_times">@2 tablets</div>
+        <div class="comments_doctor">@comments from the doctor</div>
+        </div>
+
+        <div class="drugs2">
+        <div class="name_drug">@Item 2</div>
+        <a href="javascript:void(0)" class="set_time" onclick="openTab(event, 'Schedule')"><div>set schedule +</div></a>
+        <div class="eat_times">@2 tablets</div>
+        <div class="comments_doctor">@comments from the doctor</div>
+        </div>
+
+        <div class="drugs">
+        <div class="name_drug">@Item 3</div>
+        <a href="javascript:void(0)" class="set_time" onclick="openTab(event, 'Schedule')"><div>set schedule +</div></a>
+        <div class="eat_times">@6 tablets</div>
+        <div class="comments_doctor">@comments from the doctor</div>
+        </div>
+
+        <div class="drugs2">
+        <div class="name_drug">@Item 4</div>
+        <a href="javascript:void(0)" class="set_time" onclick="openTab(event, 'Schedule')"><div>set schedule +</div></a>
+        <div class="eat_times">@2 tablets</div>
+        <div class="comments_doctor">@comments from the doctor</div>
+        </div>
+
+        <div class="drugs">
+        <div class="name_drug">@Item 5</div>
+        <a href="javascript:void(0)" class="set_time" onclick="openTab(event, 'Schedule')"><div>set schedule +</div></a>
+        <div class="eat_times">@3 tablets</div>
+        <div class="comments_doctor">@comments from the doctor</div>
+        </div>
+
+        <div class="drugs2">
+        <div class="name_drug">@Item 6</div>
+        <a href="javascript:void(0)" class="set_time" onclick="openTab(event, 'Schedule')"><div>set schedule +</div></a>
+        <div class="eat_times">@8 tablets</div>
+        <div class="comments_doctor">@comments from the doctor</div>
+        </div>
+    </div>
+
+    <div id="Schedule" class="tabcontent">
+      <h3>Schedule</h3>
+      <div>
+        <a href=""><div class="choose_day">Monday</div></a>
+        <a href=""><div class="choose_day">Tuesday</div></a>
+        <a href=""><div class="choose_day">Wednesday</div></a>
+        <a href=""><div class="choose_day">Thursday</div></a>
+        <a href=""><div class="choose_day">Friday</div></a>
+        <a href=""><div class="choose_day">Saturday</div></a>
+        <a href=""><div class="choose_day">Sunday</div></a>
+        <div class="clear"></div>
+      </div>
+      <img src="pills.png" style="width:700px;height:210px;"> </src>
+
+      <div class="cubes_wrapper">
+      <div class="one_day">
+        <div class="day_name">Monday</div>
+          <div class="cubes">07:30am</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes_select">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes_select">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes_select">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">01:30am</div>
+          <div class="clear"></div> 
+          <a href="" class="text_decor"><div class="pharma_comment">@pharma comment</div></a>
+      </div>
+         <div class="one_day">
+        <div class="day_name">Tuesday</div>
+          <div class="cubes">07:30am</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes_select">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes_select">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes_select">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes_select">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">01:30am</div>
+          <div class="clear"></div>
+          <a href="" class="text_decor"><div class="pharma_add_comment">add comment</div></a>
+      </div>
+         <div class="one_day">
+        <div class="day_name">Wednesday</div>
+          <div class="cubes">07:30am</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes_select">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes_select">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes_select">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes_select">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">01:30am</div>
+          <div class="clear"></div>
+          <a href="" class="text_decor"><div class="pharma_add_comment">add comment</div></a>
+      </div>
+         <div class="one_day">
+        <div class="day_name">Thursday</div>
+          <div class="cubes">07:30am</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes_select">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes_select">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes_select">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">01:30am</div>
+          <div class="clear"></div> 
+          <a href="" class="text_decor"><div class="pharma_comment">@pharma comment</div></a>
+      </div>
+         <div class="one_day">
+        <div class="day_name">Friday</div>
+          <div class="cubes">07:30am</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes_select">.</div>
+          <div class="cubes_select">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes_select">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes_select">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">01:30am</div>
+          <div class="clear"></div> 
+          <a href="" class="text_decor"><div class="pharma_comment">@pharma comment</div></a>
+      </div>
+      <div class="one_day">
+        <div class="day_name">Saturday</div>
+          <div class="cubes">07:30am</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes_select">.</div>
+          <div class="cubes_select">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes_select">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes_select">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">01:30am</div>
+          <div class="clear"></div> 
+          <a href="" class="text_decor"><div class="pharma_add_comment">add comment</div></a>
+      </div>
+            <div class="one_day">
+        <div class="day_name">Sunday</div>
+          <div class="cubes">07:30am</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes_select">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes_select">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes_select">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes_select">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">.</div>
+          <div class="cubes">01:30am</div>
+          <div class="clear"></div>
+          <a href="" class="text_decor"><div class="pharma_add_comment">add comment</div></a>
+      </div>
+    </div>
+
+      <div class="shedule_footer">
+        <a href="javascript:void(0)" onclick="window.print();"><div class="print">Print this page</div></a>
+        <a href="javascript:void(0)" onclick="window.open('mailto:emergency@42.us.org?subject=schedule&body=body');"><div class="send_to_emergency">Send this information to emergency contact</div></a>
+      </div>
+    </div>
+
+    <div id="Idea" class="tabcontent">
+      <h3>Main ideas</h3>
+      <ul>
+        <li class="big_li">Providing the best customer service</li>
+        <li class="big_li">Easy to Understand the schedule of when to use pills</li>
+        <li class="big_li">Identify the incompatibility between pills</li>
+        <li class="big_li">Print a schedule for a client</li>
+        <li class="big_li">Send information to emergency contact (daughter, custodian ...)</li>
+        <li class="big_li"></li>
+        <li class="big_li">Automatic calculation of number of days for a course of treatment</li>
+      </ul>
+    </div>
+
+</div>
+<!--   <div class="dfooter">footer</div> -->
+</body>
+</html>
