@@ -1,0 +1,518 @@
+body{
+	color: #666666;
+	background-color: #2B2B2B;
+	/*background-image: url("images/dark-wood.jpg");*/
+	background-position: center;
+	font-family: Georgia, Times, serif;
+	line-height: 1.4em;
+	margin: 0px;
+	padding: 0px;
+	height:100%;
+}
+/*------------------------------------Doctor's profile------------------*/
+.wrapper0{
+	width: 100%;
+	height: 200px;
+	margin: 20px auto 20px auto;
+	border-radius: 4px
+	border: 1px solid #000000;
+	background-color: #FDF3E7;
+}
+section.doctor_info{
+	min-width:1150px;
+	width:100%;
+	margin: auto;
+}
+section.doc_left nav{
+	clear: both;
+	color: #ffffff;
+	background-color: #aeaca8;
+	height: 40px;
+}
+section.doc_left nav ul{
+	font-family: Trebuchet MS;
+	margin-left: 10px;
+	margin-top: 13px;
+	padding: 10px 10px 10px 30px;
+}
+section.doc_left nav li{
+	display: inline;
+	margin-right: 40px;
+}
+section.doc_left nav li a{
+	color: #ffffff;
+	text-decoration: none;
+}
+section.doc_left nav li a:hover{
+	color: #000000;
+}
+section.doc_left p{
+	margin-left: 40px;
+	margin-bottom: 5px;
+	text-align:left;
+}
+section.doc_left hgroup{
+	margin-top: 40px;
+	margin-left: 40px;
+}
+section.doc_left h1, h2, h3{
+	font-weight: normal;
+}
+section.doc_left h2{
+	margin: 10px 0px 5px 0px;
+	padding: 0px;
+}
+section.doc_left h3{
+	margin: 0px 0px 10px 0px;
+	color: #de6581;
+}
+section.doc_left{
+	float:left;
+	margin-right:0px;
+	display: inline-block;
+	width: 75%;
+}
+section.doc_right{
+	display: inline-block;
+	width: 25%;
+	margin: 0px;
+}
+section.doc_right figure{
+	margin: 0px;
+}
+section.doc_right figure img{
+	margin: 20px 0px 0px 0px;
+	height: 160px;
+}
+/*-----------------Patient1--------------------*/
+.wrapper{
+	display:block;
+	width: 940px;
+	margin: 20px auto 20px auto;
+	border: 2px solid #000000;
+	background-color: #ffffff;
+}
+section.left nav{
+	clear: both;
+	color: #ffffff;
+	background-color: #aeaca8;
+	height: 40px;
+}
+section.left nav ul{
+	font-family: Trebuchet MS;
+	margin-left: 10px;
+	padding: 10px 10px 10px 30px;
+}
+section.left nav li{
+	display: inline;
+	margin-right: 40px;
+}
+section.left nav li a{
+	color: #ffffff;
+	text-decoration: none;
+}
+section.left nav li a:hover, section.left nav li a.current{
+	color: #000000;
+}
+.line-separator{
+	margin-top:15px;
+	height: 1px;
+	background:  #aeaca8;
+	border-bottom: 1px solid #aeaca8;
+}
+.line-separator1{
+	height: 1px;
+	background:  #aeaca8;
+	border-bottom: 1px solid #aeaca8;
+}
+section.patient_info{
+	background-color: #DFE2DB;
+	margin: auto;
+	border: 1px solid #234567;
+	width: 940px;
+	height: 220px;
+}
+section.left{
+	float:left;
+}
+section.right{
+	float:right;
+}
+section.medication{
+	width: 942px;
+	height: 200px;
+	background-color: #DFE2DB;
+}
+section.left hgroup{
+	margin-top: 30px;
+	margin-left: 40px;
+}
+section.right figure{
+	float: right;
+	width: 290px;
+	height: 180px;
+	margin-left: 0px;
+	margin-right: 10px;
+}
+section.right figure img{
+	width:290px;
+	height: 190px;
+}
+section.left p{
+	margin-left: 40px;
+	text-align:left;
+}
+section.left h1, h2, h3{
+	font-weight: normal;
+}
+section.left h2{
+	margin: 10px 0px 5px 0px;
+	padding: 0px;
+}
+section.left h3{
+	margin: 0px 0px 10px 0px;
+	color: #de6581;
+}
+/*-------------------------------patient01----------------------------*/
+#patient_02{
+	display:block;
+}
+.wrapper_02{
+	display:block;
+	width: 940px;
+	margin: 20px auto 20px auto;
+	border: 2px solid #000000;
+	background-color: #ffffff;
+}
+/*-------------------------------patient02----------------------------*/
+#patient_03{
+	display:block;
+}
+.wrapper_03{
+	display:block;
+	width: 940px;
+	margin: 20px auto 20px auto;
+	border: 2px solid #000000;
+	background-color: #ffffff;
+}
+/*-------------------------------patient03----------------------------*/
+#patient_04{
+	display:block;
+}
+.wrapper_04{
+	display:block;
+	width: 940px;
+	margin: 20px auto 20px auto;
+	border: 2px solid #000000;
+	background-color: #ffffff;
+}
+/*-------------------------------prescription-----------------------------*/
+
+.wrapper2{
+	display: none;
+	width: 940px;
+	height: 190px;
+	margin: 20px auto 20px auto;
+}
+fieldset.f_drugs{
+	display: inline;
+	float: left;
+	margin: 10px;
+}
+fieldset.f_amount{
+	display: inline;
+	float: left;
+	margin: 10px;
+}
+fieldset.f_comment{
+	display: inline;
+	float: left;
+	margin: 10px;
+}
+button.xbutton {
+	-moz-box-shadow: 0px 1px 0px 0px #1c1b18;
+	-webkit-box-shadow: 0px 1px 0px 0px #1c1b18;
+	box-shadow: 0px 1px 0px 0px #1c1b18;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #eae0c2), color-stop(1, #ccc2a6));
+	background:-moz-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:-webkit-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:-o-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:-ms-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eae0c2', endColorstr='#ccc2a6',GradientType=0);
+	background-color:#eae0c2;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	border:2px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	color:#505739;
+	font-family:Trebuchet MS;
+	font-size:14px;
+	font-weight:bold;
+	padding:12px 16px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+	float:right;
+	margin-top: 20px;
+	margin-right:40px;
+}
+button.xbutton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ccc2a6), color-stop(1, #eae0c2));
+	background:-moz-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:-webkit-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:-o-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:-ms-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccc2a6', endColorstr='#eae0c2',GradientType=0);
+	background-color:#ccc2a6;
+}
+button.xbutton:active {
+	position:relative;
+	top:1px;
+}
+
+a.add {
+	-moz-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	-webkit-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #6c7c7c));
+	background:-moz-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-webkit-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-o-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-ms-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#768d87', endColorstr='#6c7c7c',GradientType=0);
+	background-color:#768d87;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+	float:right;
+	margin-right: 0px;
+}
+a.add:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6c7c7c), color-stop(1, #768d87));
+	background:-moz-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:-webkit-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:-o-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:-ms-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6c7c7c', endColorstr='#768d87',GradientType=0);
+	background-color:#6c7c7c;
+}
+a.add:active {
+	position:relative;
+	top:1px;
+}
+textarea.html-text-box {
+	background-color:#FFFFFF;
+	background-image:url(http://);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	border-width:1;
+	border-style:solid;
+	border-color:#cccccc;
+	font-family:Georgia;
+	font-size:12pt;
+	color:#666666;
+}
+input.html-text-box {
+	background-color:#ffffff;
+	font-family:Georgia;
+	font-size:12pt;
+	color:#666666;
+}
+button.submit{
+	-moz-box-shadow:inset 0px 0px 14px -3px #f2fadc;
+	-webkit-box-shadow:inset 0px 0px 14px -3px #f2fadc;
+	box-shadow:inset 0px 0px 14px -3px #f2fadc;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dbe6c4), color-stop(1, #9ba892));
+	background:-moz-linear-gradient(top, #dbe6c4 5%, #9ba892 100%);
+	background:-webkit-linear-gradient(top, #dbe6c4 5%, #9ba892 100%);
+	background:-o-linear-gradient(top, #dbe6c4 5%, #9ba892 100%);
+	background:-ms-linear-gradient(top, #dbe6c4 5%, #9ba892 100%);
+	background:linear-gradient(to bottom, #dbe6c4 5%, #9ba892 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dbe6c4', endColorstr='#9ba892',GradientType=0);
+	background-color:#dbe6c4;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:4px;
+	border:1px solid #b2b8ad;
+	/*display:inline-block;*/
+	cursor:pointer;
+	color:#757d6f;
+	font-family:Trebuchet MS;
+	font-size:20px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ced9bf;
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+}
+button.submit:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #9ba892), color-stop(1, #dbe6c4));
+	background:-moz-linear-gradient(top, #9ba892 5%, #dbe6c4 100%);
+	background:-webkit-linear-gradient(top, #9ba892 5%, #dbe6c4 100%);
+	background:-o-linear-gradient(top, #9ba892 5%, #dbe6c4 100%);
+	background:-ms-linear-gradient(top, #9ba892 5%, #dbe6c4 100%);
+	background:linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9ba892', endColorstr='#dbe6c4',GradientType=0);
+	background-color:#9ba892;
+}
+button.submit:active {
+	position:absolute;
+	bottom:30px;
+	right:30px;
+}
+/*------------------------------3 buttons---------------------------------*/
+button.Patient1 {
+	-moz-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	-webkit-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #6c7c7c));
+	background:-moz-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-webkit-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-o-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-ms-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#768d87', endColorstr='#6c7c7c',GradientType=0);
+	background-color:#768d87;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:13px;
+	font-weight:bold;
+	padding:10px 11px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+	margin-top:0;
+}
+button.Patient1:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6c7c7c), color-stop(1, #768d87));
+	background:-moz-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:-webkit-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:-o-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:-ms-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6c7c7c', endColorstr='#768d87',GradientType=0);
+	background-color:#6c7c7c;
+}
+button.Patient1:active {
+	position:relative;
+	top:1px;
+}
+button.Patient2 {
+	-moz-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	-webkit-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #6c7c7c));
+	background:-moz-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-webkit-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-o-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-ms-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#768d87', endColorstr='#6c7c7c',GradientType=0);
+	background-color:#768d87;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:13px;
+	font-weight:bold;
+	padding:10px 11px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+	margin-top:0;
+}
+button.Patient2:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6c7c7c), color-stop(1, #768d87));
+	background:-moz-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:-webkit-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:-o-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:-ms-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6c7c7c', endColorstr='#768d87',GradientType=0);
+	background-color:#6c7c7c;
+}
+button.Patient2:active {
+	position:relative;
+	top:1px;
+}
+button.Patient3 {
+	-moz-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	-webkit-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #6c7c7c));
+	background:-moz-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-webkit-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-o-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-ms-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#768d87', endColorstr='#6c7c7c',GradientType=0);
+	background-color:#768d87;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:13px;
+	font-weight:bold;
+	padding:10px 11px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+	margin-top:0;
+}
+button.Patient3:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6c7c7c), color-stop(1, #768d87));
+	background:-moz-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:-webkit-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:-o-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:-ms-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6c7c7c', endColorstr='#768d87',GradientType=0);
+	background-color:#6c7c7c;
+}
+button.Patient3:active {
+	position:relative;
+	top:1px;
+}
+/*-------------------------------------logo------------------------------------*/
+form.logo img{
+	width: 50px;
+	height: 50px;
+	position:absolute;
+	top:20px;
+	right:0;
+}
+/*------------------------------------footer-----------------------------------*/
+footer{
+	font-size:10pt;
+	position:fixed;
+	bottom:0;
+	left:5px;
+}

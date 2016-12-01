@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Doctors</title>
+		<link rel="stylesheet" href="main.css">
+		<meta charset = utf-8 />
+		<script src="main.js"></script>
+	</head>
+	<body>
+			<!-- The doctor's profile -->
+				<div class="wrapper0" id="patient_01">
+					<section class="doctor_info">
+						<section class="doc_left">
+							<hgroup>
+								<h2>Doctor</h2>
+								<h3>Plz don't be sick</h3>
+							</hgroup>
+							<p>Mr.Doctor has been a professional surgeon for over last 3 weeks, graduated from DeVry University since last year</p>
+							<nav>
+								<ul>
+									<li><a href="">Clients</a></li>
+									<li><a href="">Recent</a></li>
+									<li><a href="">Records</a></li>
+									<li><a href="">Contact</a></li>
+									<li><a href="">Settings</a></li>
+									<li><a href="../index.html">Logout</a></li>
+								</ul>
+							</nav>
+						</section>
+						<section class="doc_right">
+							<figure>
+								<img src="images/medium_iwithmor.jpeg" alt="the photo of the doctor" />
+							</figure>
+						</section>
+					</section>
+				</div>
+				<!-- The patient profile -->	
+				<div class="wrapper_02" id="patient_02">
+					<section class="patient_info">
+						<section class="left">
+							<hgroup>
+								<h2><button class="Patient1" onclick="myPatient1()">Patient No.1</button></h2>
+								<h3>Headache, Stomachache</h3>
+							</hgroup>
+							<p>Mr.Patient has been sufferring from headache and stomachache for 3 whole weeks</p>
+							<nav>
+								<ul>
+									<li><a href="" class="current">profolio</a></li>
+									<li><a href="">recent</a></li>
+									<li><a href="">history</a></li>
+									<li><a href="">contact</a></li>
+									<li><a href="">extra</a></li>
+								</ul>
+							</nav>
+							<div class="line-separator"></div>
+							<div class="line-separator1"></div>
+						</section>
+						<section class="right">
+							<figure>
+								<img src="images/medium_ydang.jpeg" alt="the photo of the patient" />
+							</figure>
+						</section>
+					</section>
+				</div>
+				<!-- Patient No.2 -->
+				<div class="wrapper_03" id="patient_03">
+					<section class="patient_info">
+						<section class="left">
+							<hgroup>
+								<h2><button class="Patient2" onclick="myPatient2()">Patient No.2</button></h2>
+								<h3>Backpain, Pneumonia</h3>
+							</hgroup>
+							<p>Mr.Patient has been sufferring the pain from backache and pneumonia for 5 weeks</p>
+							<nav>
+								<ul>
+									<li><a href="" class="current">profolio</a></li>
+									<li><a href="">recent</a></li>
+									<li><a href="">history</a></li>
+									<li><a href="">contact</a></li>
+									<li><a href="">extra</a></li>
+								</ul>
+							</nav>
+							<div class="line-separator"></div>
+							<div class="line-separator1"></div>
+						</section>
+						<section class="right">
+							<figure>
+								<img src="images/medium_akalmyko.jpeg" alt="the photo of the patient" />
+							</figure>
+						</section>
+					</section>
+				</div>
+				<!-- Patient No.3 -->
+				<div class="wrapper_04" id="patient_04">
+					<section class="patient_info">
+						<section class="left">
+							<hgroup>
+								<h2><button class="Patient3" onclick="myPatient3()">Patient No.3</button></h2>
+								<h3>High fever, Headache</h3>
+							</hgroup>
+							<p>Mr.Patient has been sufferring the pain from headache and high fever for 2 weeks</p>
+							<nav>
+								<ul>
+									<li><a href="" class="current">profolio</a></li>
+									<li><a href="">recent</a></li>
+									<li><a href="">history</a></li>
+									<li><a href="">contact</a></li>
+									<li><a href="">extra</a></li>
+								</ul>
+							</nav>
+							<div class="line-separator"></div>
+							<div class="line-separator1"></div>
+						</section>
+						<section class="right">
+							<figure>
+								<img src="images/medium_kyork.jpeg" alt="the photo of the patient" />
+							</figure>
+						</section>
+					</section>
+				</div>
+				<!-- The medication -->
+				<div class="wrapper2" id="main_pre">
+					<section class="medication" id="section0">
+						<fieldset class="f_drugs">
+							<legend>Choose the medication</legend>
+							<form>	
+								<select class="drugs" id="mySelect">
+									<option value=""> - Select - </option>
+									<option value="1">Aspirin</option>
+									<option value="2">Vitamin</option>
+								</select>
+								<input type="button" onclick="getOptions()" value="Output the warnings">
+							</form>
+						</fieldset>
+						<fieldset class="f_amount">
+							<legend>Choose the specific dose/pill</legend>
+							<select class="amount">
+								<option value=""> - Select - </option>
+								<option value="AA">1</option>
+								<option value="BB">2</option>
+								<option value="CC">3</option>
+								<option value="DD">4</option>
+								<option value="EE">5</option>
+								<option value="FF">6</option>
+								<option value="GG">7</option>
+								<option value="HH">8</option>
+							</select>
+						</fieldset>
+						<fieldset class="f_comment">
+							<legend>Leave your comment here</legend>
+							<form method="post" action="http://">
+								<textarea name="comments" cols="30" rows="5" class="html-text-box">Comments here...</textarea><br>
+								<input type="submit" value="Submit" class="html-text-box">
+								<input type="reset" value="Reset" class="html-text-box">
+							</form>
+						</fieldset>
+						<button class="xbutton" onclick="myFunction(this)">del</button>
+					</section>
+					<a class="add" href="#" onclick="addSection(this)">add</a><br />
+				</div>
+				<form class="fixed_bu">
+					<button class="submit" onclick="mySubmit()"">submit</button>
+				</form>
+				<form class="logo">
+					<img src="images/logo.svg" alt="the logo of facil_efarm">
+				</form>
+			<footer>
+				<p>@42US2016</p>
+				<p>Contact Info:</p>
+				<p><a href="ydang@student.42.us.org">ydang@student.42.us.org</a>.</p>
+			</footer>
+	</body>
+</html>
